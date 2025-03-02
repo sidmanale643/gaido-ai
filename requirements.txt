@@ -2,6 +2,7 @@ llama_index_core
 llama-index-embeddings-huggingface
 llama-index-embeddings-ollama
 llama-index-llms-groq
+llama-index-llms-ollama
 llama-index-retrievers-bm25
 llama-index-readers-llama-parse
 streamlit
