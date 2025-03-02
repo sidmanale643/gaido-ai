@@ -1,0 +1,6 @@
+,query,hallucination_score,faithfulness_score,relevance_score,reason
+0,What is the policy number?,1.0,1.0,0.0,"The score is 1.00 because there are contradictions in the alignments, specifically the one indicating a mismatch between the actual output and the context regarding the Policy Number."
+1,What is the name of the insurance product?,0.5,1.0,0.5,"The score is 0.50 because there are contradictory information regarding policy application details, indicating potential hallucinations."
+2,What is the policy number mentioned in the document?,0.5,1.0,1.0,"The score is 0.50 because there is an alignment/contradiction between the actual output (policy number) and contexts (policy document), indicating some level of hallucination."
+3,What is the coverage for alternative treatments like Ayurveda or Homeopathy?,0.0,0.5,1.0,"The score is 0.00 because all factual alignments match the provided context, indicating no hallucinations."
+4,Where can the insured check the list of network hospitals?,0.5,0.6666666666666666,0.3333333333333333,"The score is 0.5 because there are contradictions between the actual output and contexts, indicating that the model generated information not present in the provided data."
