@@ -59,24 +59,6 @@ embed_model = OllamaEmbedding(
 Settings.llm = llm
 Settings.embed_model = embed_model
 
-# prompt = """Key Fields to Extract:
-# Policyholder Info: Name, Address, Contact
-# Policy Details: Policy Number, Customer ID, Start & Expiry Dates, Plan Type, Renewal Date
-# Coverage: Base Sum Insured, Safeguard, Booster Benefit, Total Sum Insured
-# Premium: Net Premium, Taxes, Gross Premium (in numbers & words)
-# Nominee & Intermediary: Name, Relationship, Intermediary Contact
-# Claims & Grievance: Settlement Time, Submission Process, Customer Support Links
-# Exclusions & Waiting Periods: Pre-existing Conditions, Specific Waiting Times, Permanent Exclusions
-# Benefits & Riders: Cashless Claims, Room Rent, Air Ambulance, Health Checkups, No-Claim Bonus
-# """
-
-
-# documents_with_instruction = LlamaParse(
-#     result_type="markdown",
-#     api_key = llama_parse_api_key,
-#     content_guideline_instruction = prompt
-#     ).load_data(r"C:\Users\SiD\vs\GaidoAI\Sample HI Policy.pdf")
-
 documents = SimpleDirectoryReader(input_files=[r'GaidoAI\insurance_documents.md']).load_data()
 
 index = VectorStoreIndex.from_documents(
